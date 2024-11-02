@@ -1,10 +1,83 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root {
     --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, 0.16);
-    --color-redish: 832cb31f c0e4-4c7c-8cfd-8120400cc2;
+    --color-redish: #fb3b64;
+    --color-green: #55DFB4;
+    --color-black: #000000;
+    --color-gray: #a5a5a5;
+    --color-light-gray: #f5f5f5;
+    --color-white: #ffffff;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-ralevay: 'Raleway', sans-serif;
 }
+
+                                                        /* HEADER */
+
+.header-background {
+    width: 100vw;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.header-container {
+    width: 1352px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: var(--font-ralevay);
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--color-primary);
+}
+
+.header-nav ul {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    
+}
+
+.header-nav ul li {
+    list-style: none;
+    margin-right: 20px;
+    font-family: var(--font-open-sans);
+    text-transform: uppercase;
+    font-size: 11px;
+    
+}
+
+.header-nav ul li a {
+    text-decoration: none;
+    color: var(--color-black);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 3.28px;
+    color: #A5A5A5;
+    position: relative;
+}
+
+.header-nav ul li a:hover {
+    color: var(--color-black);
+}
+
+.header-nav ul li a:hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -25px;
+    height: 4px;
+    background-color: var(--color-primary);
+}
+
+                                                        /* HEADER */
