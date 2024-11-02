@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-primary: #08A6E4;
+    --color-primary-shadow: rgba(7, 172, 230, 0.16);
+    --color-redish: 832cb31f c0e4-4c7c-8cfd-8120400cc2;
+}
