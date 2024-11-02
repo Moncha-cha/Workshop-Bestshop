@@ -137,6 +137,7 @@
     box-shadow: var(--color-primary-shadow);
     background-color: var(--color-white);
     align-items: flex-start;
+    /* box-shadow: 0px -5px 80px #00000029; why is my picture not cutted as in adobeXD, cannot find correct way */
 }
 
 .counters {
@@ -203,5 +204,47 @@
     font-weight: 400;
 }
 
-                                                            /* REASONS */
+                                                            /* BENEFITS */
 
+.benefits-background {
+    background-color: var(--color-light-gray);
+    padding: 60px 0;
+}
+
+.benefits-cards {
+    width: 1124px;
+    margin: 0 auto;
+}
+
+.benefits-card1,
+.benefits-card2,
+.benefits-card3,
+.benefits-image {
+    display: flex;
+    height: 370px;
+    background-color: var(--color-white);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    margin-top: 40px;
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+}
+
+.benefits-card1,
+.benefits-card2 {
+    display: flex;
+    justify-content: space-between ;
+}
+
+.benefits-doublecard {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.benefits-image {
+    background-color: var(--color-green);
+    background-position: center;
+    background-size: cover;
+}
