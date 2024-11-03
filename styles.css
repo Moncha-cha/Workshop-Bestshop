@@ -352,21 +352,11 @@
 }
 
 .pricing-cards {
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 40px;
-}
-
-.pricing-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    border-radius: 5px;
-    gap: 20px;
-    
+    gap: 30px;
 }
 
 .pricing-card1,
@@ -374,9 +364,45 @@
 .pricing-card3 {
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Zarovná obsah na střed po svislé ose */
-    align-items: center; /* Zarovná obsah na střed po vodorovné ose */
-    min-height: 370px;
+    justify-content: center;
+    align-items: center;
+    max-height: 540px;
+    border: 1px solid var(--color-black);
+    padding: 70px 85px 0px 85px;
+    border-radius: 18px;
+}
+
+.pricing-card1 {
+    border: 1px solid var(--color-redish);
+}
+
+.pricing-card1 .pricing-card-price {
+    color: var(--color-redish);
+    margin: -10px;
+}
+
+.pricing-card2 {
+    border: 1px solid var(--color-primary);
+    box-shadow: 5px 10px 27px #07ACE629;
+    padding: 50px 115px 0 105px;
+    min-height: 560px;
+}
+
+.pricing-card2 .pricing-card-title {
+    font-size: 22px;
+}
+
+.pricing-card2 .pricing-card-price {
+    color: var(--color-primary);
+}
+
+
+.pricing-card3 {
+    border: 1px solid var(--color-green);
+}
+
+.pricing-card3 .pricing-card-price {
+    color: var(--color-green);
 }
 
 .pricing-cards ul {
@@ -387,7 +413,7 @@
     text-align: center;
     line-height: 3;
     margin-bottom: 100px;
-    padding-top: 
+    padding-top: 25px;
 }
 
 .pricing-cards h3 {
@@ -408,6 +434,7 @@
 .pricing-cards p {
     font-family: var(--font-raleway);
     font-size: 12px;
+    font-weight: bold;
     color: var(--color-black);
     padding-bottom: 30px;
 }
@@ -477,3 +504,33 @@
     background-repeat: no-repeat; /* Prevent the image from repeating */
     vertical-align: middle;
 }
+
+/* Buttons */
+
+.pricing-card-button {
+    position: absolute;
+    font-family: var(--font-open-sans);
+    font-size: 13px;
+    color: var(--color-white);
+    border: none;
+    padding: 16px 57px;
+    margin-top: 55px;
+    cursor: pointer;
+    border-radius: 23px;
+    top: 470px;
+}
+
+.pricing-card2 .pricing-card-button  {
+    top: 480px;
+    background-color: var(--color-primary);
+}
+
+.pricing-card3 .pricing-card-button {
+    background-color: var(--color-green);
+}
+
+.pricing-card1 .pricing-card-button {
+    background-color: var(--color-redish);
+}
+
+                                                                            /* FOOTER */
