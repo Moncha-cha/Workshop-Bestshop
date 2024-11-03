@@ -117,6 +117,7 @@
 }
 
                                                                                         /* Counters Section */
+
 .counters-background {
     box-shadow: var(--color-primary-shadow);
     background-color: var(--color-white);
@@ -137,6 +138,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 50px;
+    margin: 0 auto;
 }
 
 .counter-each {
@@ -158,6 +161,7 @@
 
 .first {
     background-color: var(--color-redish);
+
 }
 
 .second {
@@ -168,11 +172,17 @@
     background-color: var(--color-green);
 }
 
+.counter-image {
+    position: relative;
+    right: -20px;
+} 
+
 .counter-number {
     font-size: 20px;
     font-family: var(--font-raleway);
     font-weight: 800;
 }
+
 
 .counter-text {
     font-size: 14px;
@@ -181,6 +191,8 @@
 }
 
                                                                             /* Benefits Section */
+
+
 .benefits-background {
     background-color: var(--color-light-gray);
     padding: 40px 20px;
@@ -192,34 +204,90 @@
     display: flex;
     flex-direction: column;
     gap: 40px;
+    
 }
 
 .benefits-card1,
 .benefits-card2,
 .benefits-card3 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
     background-color: var(--color-white);
-    gap: 20px;
+    gap: 30px;
+    min-height: 370px;
+    
 }
 
 .benefits-card3 {
+    justify-content: flex-start;
     flex-direction: column;
-    flex: 1;
+    align-items: flex-start;
+    max-width: 623px;
+    max-height: 370px;
+    
 }
 
 .benefits-doublecard {
     display: flex;
-    gap: 20px;
+    justify-content: space-between;
+    gap: 40px;
 }
 
-.benefits-image {
+/* colored circle and matrix */
+
+.benefits-image1,
+.benefits-image2 {
+    position: relative;
+}
+
+.benefits-image1::before,
+.benefits-image2::before {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.benefits-image1::before {
+    background-color: var(--color-redish);
+    top: -30px;
+    left: 200px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50px;  /* Kulaté rohy */
+    transform: rotate(45deg);
+}
+
+.benefits-image2::before {
+    background-color: var(--color-primary);
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+}
+
+.benefits-image1 img,
+.benefits-image2 img {
+    position: relative;
+    z-index: 1;
+}
+
+.benefits-image1 img {
+    padding-right: 100px;
+}
+
+/* colored circle and matrix */
+
+.benefits-image-background {
     background-color: var(--color-green);
-    background-position: center;
-    background-size: cover;
+    min-width: 440px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .benefits-title {
@@ -228,10 +296,33 @@
     font-weight: 300;
     color: var(--color-black);
     margin-bottom: 10px;
+    text-align: left;
+    padding-top: 70px;
+    padding-bottom: 40px;
 }
 
 .benefits-text {
     font-family: var(--font-open-sans);
     font-size: 14px;
     color: var(--color-black);
+    padding-bottom: 20px;
+}
+
+.benefits-line {
+    display: inline-block;
+    width: 327px;
+    height: 3px;
+    margin: 18px 0;
+}
+
+.benefits-card1 .benefits-line {
+    background-color: var(--color-redish);
+}
+
+.benefits-card2 .benefits-line {
+    background-color: var(--color-primary);
+}
+
+.benefits-card3 .benefits-line {
+    background-color: var(--color-green);
 }
