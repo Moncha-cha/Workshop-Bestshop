@@ -533,4 +533,26 @@
     background-color: var(--color-redish);
 }
 
-                                                                            /* FOOTER */
+                                                                            /* CONTACT FORM */
+
+.contacts-background {
+    background-color: var(--color-white);
+    
+}
+
+.contact-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-us {
+    display: flex; 
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    
+}
